@@ -1,5 +1,5 @@
-from risk_engine.preprocesing import load_transactions
-from risk_engine.preprocesing import create_customer_profile
+from risk_engine.preprocessing import load_transactions
+from risk_engine.preprocessing import create_customer_profile
 from risk_engine.scoring import (
     analyze_transaction,
     calculate_overall_risk
