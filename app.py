@@ -1,191 +1,74 @@
 import streamlit as st
-import pandas as pd
-from llm.llm_report import generate_llm_report
-from risk_engine.preprocessing import load_transactions
-from risk_engine.preprocessing import create_customer_profile
+
+from reports.report_generator import generate_report
+from risk_engine.preprocessing import (
+    create_customer_profile,
+    load_transactions,
+)
 from risk_engine.scoring import (
     analyze_transaction,
-    calculate_overall_risk
+    calculate_overall_risk,
 )
-from reports.report_generator import generate_report
 
-overall_risk = calculate_overall_risk(
-    findings)
 
 st.set_page_config(
-    page_title="Banking Risk Investigation",
-    layout="wide"
+    page_title="Bank Risk Investigation Assistant",
+    page_icon="🏦",
+    layout="wide",
 )
 
-st.title("🏦 Banking Transaction Risk Investigation Assistant")
-
-st.write(
-    "Analyze a customer's transaction history and identify "
-    "activity requiring investigation."
-)
+st.title("Bank Risk Investigation Assistant")
+st.write("Upload a transaction CSV to review rule-based risk indicators.")
 
 uploaded_file = st.file_uploader(
-    "Upload Transaction CSV",
-    type=["csv"]
+    "Choose a transaction CSV",
+    type="csv",
 )
 
-
-if uploaded_file:
-
-    df = pd.read_csv(uploaded_file)
-
-    # Save temporary data
-    df.to_csv(
-        "data/uploaded_transactions.csv",
-        index=False
-    )
-
+if uploaded_file is not None:
     try:
-
-        # Preprocess
-        df = load_transactions(
-            "data/uploaded_transactions.csv"
-        )
-
-        # Profile
+        df = load_transactions(uploaded_file)
         profile = create_customer_profile(df)
+        findings = analyze_transaction(df, profile)
+        overall_risk = calculate_overall_risk(findings)
 
-        # Analyze
-        findings = analyze_transaction(
-            df,
-            profile
+        st.subheader("Risk Summary")
+        st.write(
+            f"**Status:** {overall_risk['status']}  "
+            f"**Risk level:** {overall_risk['risk_level']}  "
+            f"**Score:** {overall_risk['score']}"
         )
+        st.dataframe(df, use_container_width=True)
 
-        # Overall risk
-        overall_risk = calculate_overall_risk(
-            findings
-        )
-
-        # Dashboard
-        col1, col2, col3 = st.columns(3)
-
-        col1.metric(
-            "Transactions",
-            len(df)
-        )
-
-        col2.metric(
-            "Transactions Flagged",
-            len(findings)
-        )
-
-        col3.metric(
-            "Risk Level",
-            overall_risk["risk_level"]
-        )
-
-        st.divider()
-
-        if overall_risk["status"] == "ATTENTION REQUIRED":
-
-            st.warning(
-                "⚠️ ATTENTION REQUIRED"
-            )
-
-        else:
-
-            st.success(
-                "✅ NO ATTENTION REQUIRED"
-            )
-
-        st.subheader("Transaction History")
-
-        st.dataframe(
-            df,
-            use_container_width=True
-        )
-
-        st.subheader("Investigation Findings")
-
-        if findings:
-
-            for finding in findings:
-
-                with st.expander(
-                    f"{finding['transaction_id']} - "
-                    f"₹{finding['amount']:,.2f}"
-                ):
-
-                    st.write(
-                        f"**Payee:** {finding['payee']}"
-                    )
-
-                    st.write(
-                        f"**Channel:** {finding['channel']}"
-                    )
-
-                    st.write(
-                        f"**Risk Score:** "
-                        f"{finding['risk_score']}"
-                    )
-
-                    st.write("### Triggered Rules")
-
-                    for rule in finding["rules"]:
-
-                        st.write(
-                            f"**{rule['rule']}**"
-                        )
-
-                        st.write(
-                            rule["reason"]
-                        )
-
-        else:
-
-            st.success(
-                "No configured risk rules were triggered."
-            )
-
-        # Generate report
-        report = generate_report(
-            df,
-            findings,
-            overall_risk,
-            profile
-        )
-
+        report = generate_report(df, findings, overall_risk, profile)
         st.subheader("Investigation Report")
-
         st.text(report)
-
         st.download_button(
             label="Download Report",
             data=report,
             file_name="investigation_report.txt",
-            mime="text/plain"
+            mime="text/plain",
         )
 
-    except Exception as e:
+        st.subheader("AI Investigation Report")
+        if st.button("Generate AI Report"):
+            with st.spinner("AI is analyzing the rule-based findings..."):
+                try:
+                    from llm.llm_report import generate_investigation_report
 
-        st.error(
-            f"Error processing file: {e}"
-        )
-
-st.subheader("🤖 AI Investigation Report")
-
-if st.button("Generate AI Report"):
-
-    with st.spinner(
-        "AI is analyzing the rule-based findings..."
-    ):
-
-        ai_report = generate_llm_report(
-            findings,
-            overall_risk,
-            profile
-        )
-
-    st.markdown(ai_report)
-
-    st.download_button(
-        label="Download AI Report",
-        data=ai_report,
-        file_name="ai_investigation_report.txt",
-        mime="text/plain"
-    )
+                    ai_report = generate_investigation_report(
+                        findings,
+                        overall_risk,
+                        profile,
+                    )
+                    st.markdown(ai_report)
+                    st.download_button(
+                        label="Download AI Report",
+                        data=ai_report,
+                        file_name="ai_investigation_report.txt",
+                        mime="text/plain",
+                    )
+                except (ImportError, ValueError) as error:
+                    st.error(str(error))
+    except Exception as error:
+        st.error(f"Error processing file: {error}")
