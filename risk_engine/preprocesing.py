@@ -47,3 +47,27 @@ def load_transactions(file_path):
     transaction_data["hour"] = transaction_data["date"].dt.hour
 
     return transaction_data
+
+def create_customer_profile(transaction_data):
+
+    profile = {}
+
+    # Typical transaction amount
+    profile["median_amount"] = transaction_data["amount"].median()
+    profile["average_amount"] = transaction_data["amount"].mean()
+
+    # Known payees
+    profile["known_payees"] = set(
+        transaction_data["payee"].dropna().unique()
+    )
+
+    # Common channels
+    profile["common_channels"] = set(
+        transaction_data["channel"].dropna().unique()
+    )
+
+    # Normal transaction hours
+    profile["normal_start_hour"] = 8
+    profile["normal_end_hour"] = 22
+
+    return profile
