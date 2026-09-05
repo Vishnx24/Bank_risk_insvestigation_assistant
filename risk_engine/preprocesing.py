@@ -10,6 +10,7 @@ REQUIRED_COLUMNS = [
     "channel"
 ]
 
+#load all transaction in .csv file
 
 def load_transactions(file_path):
     transaction_data = pd.read_csv(file_path)
@@ -48,6 +49,10 @@ def load_transactions(file_path):
 
     return transaction_data
 
+###create a customer profile based on the transaction data, which includes median and 
+# average transaction amounts, known payees, 
+# common channels, and normal transaction hours.
+
 def create_customer_profile(transaction_data):
 
     profile = {}
@@ -71,6 +76,12 @@ def create_customer_profile(transaction_data):
     profile["normal_end_hour"] = 22
 
     return profile
+
+========================================
+# create a rule to check
+=================================
+
+#create a function to check for large transactions 
 
 def check_large_transaction(row, profile):
 
@@ -96,6 +107,8 @@ def check_large_transaction(row, profile):
 
     return None
 
+# create a function to check for new payees
+
 def check_new_payee(row,profile):
 
     if row["payee"] not in profile["known_payees"]:
@@ -111,6 +124,7 @@ def check_new_payee(row,profile):
 
     return None
 
+#create a function to check for transactions outside normal hours
 
 def check_odd_hours(row, profile):
 
@@ -129,6 +143,8 @@ def check_odd_hours(row, profile):
         }
 
     return None
+
+#create a function to check for transactions that deviate significantly from the customer's established transaction pattern
 
 def check_pattern_deviation(row, profile):
 
@@ -149,4 +165,31 @@ def check_pattern_deviation(row, profile):
         }
 
     return None
+#create a function to check for multiple transactions in a short time frame
 
+def check_transaction_burst(transaction_data, index):
+
+    current_time = transaction_data.loc[index, "date"]
+
+    window_start = current_time - pd.Timedelta(minutes=30)
+
+    nearby = transaction_data[
+        (transaction_data["date"] >= window_start) &
+        (transaction_data["date"] <= current_time)
+    ]
+
+    if len(nearby) >= 3:
+
+        total_amount = nearby["amount"].sum()
+
+        return {
+            "rule": "TRANSACTION_BURST",
+            "score": 25,
+            "reason": (
+                f"{len(nearby)} transactions totaling "
+                f"₹{total_amount:,.2f} occurred within "
+                f"approximately 30 minutes."
+            )
+        }
+
+    return None
