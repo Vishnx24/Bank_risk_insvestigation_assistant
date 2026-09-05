@@ -6,6 +6,8 @@ from risk_engine.preprocesing import(
     check_transaction_burst
 )
 
+#create a analyze function  to find the risk score of each transaction based on the rules defined in the preprocessing module.
+
 def analyze_transaction(transaction_data,profile):
 
     findings=[]
@@ -51,4 +53,3 @@ def analyze_transaction(transaction_data,profile):
                 "rules": transaction_findings
             })
 
-            
