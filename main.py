@@ -4,7 +4,8 @@ from risk_engine.scoring import (
     analyze_transaction,
     calculate_overall_risk
 )
-from reports.report_generator import generate_report
+
+from llm.llm_report import generate_llm_report
 
 
 DATA_FILE = "data/transactions.csv"
@@ -12,58 +13,68 @@ DATA_FILE = "data/transactions.csv"
 
 def main():
 
-    print("\nLoading transaction history...")
+    print("Loading transactions...")
 
-    # Step 1: Load data
     df = load_transactions(DATA_FILE)
 
-    print(f"Loaded {len(transaction_data)} transactions.")
+    print(
+        f"Loaded {len(df)} transactions."
+    )
 
-    # Step 2: Create customer profile
+
+    # Create customer baseline
     profile = create_customer_profile(df)
 
-    print("Customer behavioural profile created.")
+    print("Customer profile created.")
 
-    # Step 3: Analyze transactions
-    findings = analyze_transaction(
-        transaction_data,
+
+    # Rule-based analysis
+    findings = analyze_transactions(
+        df,
         profile
     )
 
     print(
-        f"Found {len(findings)} transaction(s) "
-        "requiring review."
+        f"{len(findings)} transaction(s) "
+        "require review."
     )
 
-    # Step 4: Calculate risk
+
+    # Risk score
     overall_risk = calculate_overall_risk(
         findings
     )
 
-    # Step 5: Generate report
-    report = generate_report(
-        transaction_data,
+
+    print("Generating LLM investigation report...")
+
+
+    # LLM
+    report = generate_llm_report(
         findings,
         overall_risk,
         profile
     )
 
-    # Display report
+
     print("\n")
+    print("=" * 70)
     print(report)
+    print("=" * 70)
+
 
     # Save report
     with open(
-        "reports/investigation_report.txt",
+        "reports/llm_investigation_report.txt",
         "w",
         encoding="utf-8"
     ) as file:
 
         file.write(report)
 
+
     print(
-        "\nReport saved to "
-        "reports/investigation_report.txt"
+        "\nReport saved successfully."
     )
 
 
