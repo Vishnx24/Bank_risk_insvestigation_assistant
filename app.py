@@ -9,6 +9,8 @@ from risk_engine.scoring import (
 )
 from reports.report_generator import generate_report
 
+overall_risk = calculate_overall_risk(
+    findings)
 
 st.set_page_config(
     page_title="Banking Risk Investigation",
@@ -164,3 +166,26 @@ if uploaded_file:
         st.error(
             f"Error processing file: {e}"
         )
+
+st.subheader("🤖 AI Investigation Report")
+
+if st.button("Generate AI Report"):
+
+    with st.spinner(
+        "AI is analyzing the rule-based findings..."
+    ):
+
+        ai_report = generate_llm_report(
+            findings,
+            overall_risk,
+            profile
+        )
+
+    st.markdown(ai_report)
+
+    st.download_button(
+        label="Download AI Report",
+        data=ai_report,
+        file_name="ai_investigation_report.txt",
+        mime="text/plain"
+    )

@@ -29,7 +29,7 @@ def main():
 
 
     # Rule-based analysis
-    findings = analyze_transactions(
+    findings = analyze_transaction(
         df,
         profile
     )
