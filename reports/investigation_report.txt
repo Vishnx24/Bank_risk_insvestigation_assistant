@@ -1,0 +1,1516 @@
+============================================================
+BANKING TRANSACTION RISK INVESTIGATION REPORT
+============================================================
+Generated: 2026-09-05 18:24:26
+
+OVERALL FINDING
+------------------------------
+Status: ATTENTION REQUIRED
+Risk Level: CRITICAL
+Maximum Risk Score: 90
+
+CUSTOMER NORMAL PROFILE
+------------------------------
+Median Transaction: ₹2,481.50
+Average Transaction: ₹6,842.91
+Normal Activity Hours: 08:00 - 22:00
+
+TRANSACTIONS REQUIRING ATTENTION
+----------------------------------------
+
+Transaction ID: TXN0985
+Date: 2026-01-06 09:06:00
+Payee: Flipkart
+Amount: ₹7,893.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0817
+Date: 2026-01-06 13:51:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0439
+Date: 2026-01-11 12:13:00
+Payee: Ravi Kumar
+Amount: ₹8,172.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0147
+Date: 2026-01-13 17:30:00
+Payee: Flipkart
+Amount: ₹7,449.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0887
+Date: 2026-01-14 14:45:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0063
+Date: 2026-01-14 19:29:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0927
+Date: 2026-01-15 13:16:00
+Payee: ABC Ltd
+Amount: ₹45,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹45,000.00 is approximately 18.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0075
+Date: 2026-01-15 17:53:00
+Payee: Ravi Kumar
+Amount: ₹9,883.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0486
+Date: 2026-01-17 09:53:00
+Payee: Book Shop
+Amount: ₹7,914.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0189
+Date: 2026-01-18 16:38:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0142
+Date: 2026-01-19 15:46:00
+Payee: Uber
+Amount: ₹2,729.00
+Channel: UPI
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 3 transactions totaling ₹7,067.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0223
+Date: 2026-01-19 17:50:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0520
+Date: 2026-01-20 19:27:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0559
+Date: 2026-01-21 08:46:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0515
+Date: 2026-01-21 13:35:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0202
+Date: 2026-01-22 12:07:00
+Payee: Ravi Kumar
+Amount: ₹7,658.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0886
+Date: 2026-01-22 14:20:00
+Payee: ABC Ltd
+Amount: ₹45,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹45,000.00 is approximately 18.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0438
+Date: 2026-01-22 16:36:00
+Payee: ABC Ltd
+Amount: ₹45,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹45,000.00 is approximately 18.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0266
+Date: 2026-01-24 11:50:00
+Payee: Book Shop
+Amount: ₹7,978.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0247
+Date: 2026-01-24 11:54:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0068
+Date: 2026-01-26 08:51:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0477
+Date: 2026-01-26 20:11:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0293
+Date: 2026-01-26 20:58:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0399
+Date: 2026-01-29 12:50:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0450
+Date: 2026-02-02 19:26:00
+Payee: Ravi Kumar
+Amount: ₹9,624.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0502
+Date: 2026-02-04 09:04:00
+Payee: Ravi Kumar
+Amount: ₹8,498.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0673
+Date: 2026-02-04 21:04:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0608
+Date: 2026-02-05 16:51:00
+Payee: Flipkart
+Amount: ₹5,094.00
+Channel: NEFT
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 3 transactions totaling ₹6,295.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0974
+Date: 2026-02-10 21:46:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0352
+Date: 2026-02-14 09:52:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0422
+Date: 2026-02-15 21:11:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0146
+Date: 2026-02-15 21:43:00
+Payee: Ravi Kumar
+Amount: ₹9,486.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0822
+Date: 2026-02-17 11:10:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0727
+Date: 2026-02-17 17:15:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0160
+Date: 2026-02-22 15:10:00
+Payee: Uber
+Amount: ₹2,542.00
+Channel: UPI
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 3 transactions totaling ₹10,311.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0615
+Date: 2026-02-23 19:46:00
+Payee: Ravi Kumar
+Amount: ₹9,011.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0856
+Date: 2026-02-23 21:50:00
+Payee: Ravi Kumar
+Amount: ₹10,632.00
+Channel: IMPS
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0381
+Date: 2026-02-24 10:38:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0115
+Date: 2026-02-27 08:24:00
+Payee: ABC Ltd
+Amount: ₹45,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹45,000.00 is approximately 18.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0651
+Date: 2026-03-02 09:03:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0046
+Date: 2026-03-03 08:59:00
+Payee: Flipkart
+Amount: ₹7,692.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0700
+Date: 2026-03-03 11:50:00
+Payee: Restaurant A
+Amount: ₹1,649.00
+Channel: UPI
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 3 transactions totaling ₹5,752.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0796
+Date: 2026-03-03 12:18:00
+Payee: ABC Ltd
+Amount: ₹45,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹45,000.00 is approximately 18.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0497
+Date: 2026-03-03 20:30:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0624
+Date: 2026-03-04 08:51:00
+Payee: ABC Ltd
+Amount: ₹45,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹45,000.00 is approximately 18.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0468
+Date: 2026-03-06 08:53:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 75
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+  - TRANSACTION_BURST: 3 transactions totaling ₹57,833.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0026
+Date: 2026-03-10 09:07:00
+Payee: Flipkart
+Amount: ₹7,980.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0707
+Date: 2026-03-10 14:26:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0038
+Date: 2026-03-10 21:07:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0274
+Date: 2026-03-10 22:00:00
+Payee: SuperMart
+Amount: ₹1,458.00
+Channel: UPI
+Risk Score: 15
+Triggered Rules:
+  - ODD_HOURS_ACTIVITY: Transaction occurred at 22:00, outside the customer's typical activity period.
+
+Transaction ID: TXN0117
+Date: 2026-03-13 13:59:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0586
+Date: 2026-03-13 18:38:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0445
+Date: 2026-03-14 12:18:00
+Payee: Ravi Kumar
+Amount: ₹11,757.00
+Channel: IMPS
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0637
+Date: 2026-03-14 15:45:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0431
+Date: 2026-03-15 09:18:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0073
+Date: 2026-03-15 15:13:00
+Payee: Ravi Kumar
+Amount: ₹10,105.00
+Channel: IMPS
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0319
+Date: 2026-03-17 13:34:00
+Payee: Ravi Kumar
+Amount: ₹7,807.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0642
+Date: 2026-03-17 17:41:00
+Payee: ABC Ltd
+Amount: ₹45,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹45,000.00 is approximately 18.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0538
+Date: 2026-03-18 10:41:00
+Payee: Ravi Kumar
+Amount: ₹11,448.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0216
+Date: 2026-03-19 08:14:00
+Payee: Ravi Kumar
+Amount: ₹9,751.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0692
+Date: 2026-03-19 10:26:00
+Payee: ABC Ltd
+Amount: ₹45,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹45,000.00 is approximately 18.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0360
+Date: 2026-03-19 15:49:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0649
+Date: 2026-03-19 17:56:00
+Payee: Ravi Kumar
+Amount: ₹10,386.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0241
+Date: 2026-03-20 18:09:00
+Payee: Ravi Kumar
+Amount: ₹10,325.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0051
+Date: 2026-03-21 14:48:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0211
+Date: 2026-03-22 10:02:00
+Payee: Ravi Kumar
+Amount: ₹9,779.00
+Channel: IMPS
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0289
+Date: 2026-03-23 18:41:00
+Payee: Ravi Kumar
+Amount: ₹8,994.00
+Channel: IMPS
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0630
+Date: 2026-03-24 12:52:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0254
+Date: 2026-03-26 15:01:00
+Payee: Ravi Kumar
+Amount: ₹9,117.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0933
+Date: 2026-03-27 21:46:00
+Payee: Uber
+Amount: ₹1,264.00
+Channel: UPI
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 3 transactions totaling ₹6,061.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0176
+Date: 2026-03-31 11:49:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0447
+Date: 2026-03-31 13:17:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0913
+Date: 2026-04-04 17:19:00
+Payee: ABC Ltd
+Amount: ₹45,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹45,000.00 is approximately 18.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0597
+Date: 2026-04-05 13:39:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0337
+Date: 2026-04-05 19:26:00
+Payee: Ravi Kumar
+Amount: ₹9,850.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0373
+Date: 2026-04-06 10:36:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0656
+Date: 2026-04-06 15:05:00
+Payee: Ravi Kumar
+Amount: ₹9,998.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0675
+Date: 2026-04-07 09:22:00
+Payee: ABC Ltd
+Amount: ₹45,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹45,000.00 is approximately 18.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0365
+Date: 2026-04-08 18:11:00
+Payee: Electricity Board
+Amount: ₹2,915.00
+Channel: UPI
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 3 transactions totaling ₹6,805.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0166
+Date: 2026-04-10 13:44:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0163
+Date: 2026-04-10 15:09:00
+Payee: Electricity Board
+Amount: ₹4,973.00
+Channel: UPI
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 3 transactions totaling ₹9,873.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0823
+Date: 2026-04-12 08:29:00
+Payee: Ravi Kumar
+Amount: ₹11,061.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0544
+Date: 2026-04-12 20:14:00
+Payee: Ravi Kumar
+Amount: ₹8,842.00
+Channel: IMPS
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0389
+Date: 2026-04-13 09:11:00
+Payee: Amazon
+Amount: ₹6,570.00
+Channel: UPI
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 3 transactions totaling ₹14,284.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0410
+Date: 2026-04-14 20:06:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0626
+Date: 2026-04-16 13:38:00
+Payee: Ravi Kumar
+Amount: ₹8,739.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0378
+Date: 2026-04-16 14:02:00
+Payee: Book Shop
+Amount: ₹5,950.00
+Channel: NEFT
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 3 transactions totaling ₹18,904.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0372
+Date: 2026-04-20 13:20:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0191
+Date: 2026-04-21 14:10:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0519
+Date: 2026-04-22 12:41:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0341
+Date: 2026-04-24 15:35:00
+Payee: Flipkart
+Amount: ₹7,507.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0101
+Date: 2026-04-24 17:24:00
+Payee: Ravi Kumar
+Amount: ₹8,007.00
+Channel: IMPS
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0328
+Date: 2026-04-27 14:17:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0848
+Date: 2026-04-28 17:39:00
+Payee: Ravi Kumar
+Amount: ₹9,115.00
+Channel: IMPS
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0874
+Date: 2026-04-28 18:50:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0267
+Date: 2026-04-29 10:00:00
+Payee: ABC Ltd
+Amount: ₹45,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹45,000.00 is approximately 18.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0679
+Date: 2026-04-29 19:29:00
+Payee: Ravi Kumar
+Amount: ₹9,920.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0714
+Date: 2026-04-30 17:06:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0427
+Date: 2026-05-01 15:32:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0745
+Date: 2026-05-02 08:57:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0709
+Date: 2026-05-03 11:33:00
+Payee: Book Shop
+Amount: ₹7,930.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0711
+Date: 2026-05-03 12:08:00
+Payee: Ravi Kumar
+Amount: ₹10,902.00
+Channel: IMPS
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0829
+Date: 2026-05-06 17:00:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0406
+Date: 2026-05-09 17:32:00
+Payee: Book Shop
+Amount: ₹5,972.00
+Channel: NEFT
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 3 transactions totaling ₹8,880.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0548
+Date: 2026-05-13 13:52:00
+Payee: Amazon
+Amount: ₹7,692.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0153
+Date: 2026-05-14 16:16:00
+Payee: ABC Ltd
+Amount: ₹45,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹45,000.00 is approximately 18.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0602
+Date: 2026-05-15 18:44:00
+Payee: Ravi Kumar
+Amount: ₹11,153.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0418
+Date: 2026-05-16 16:42:00
+Payee: Flipkart
+Amount: ₹7,921.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0188
+Date: 2026-05-17 15:18:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0657
+Date: 2026-05-18 21:41:00
+Payee: ABC Ltd
+Amount: ₹45,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹45,000.00 is approximately 18.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0059
+Date: 2026-05-19 10:15:00
+Payee: Ravi Kumar
+Amount: ₹10,355.00
+Channel: IMPS
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0688
+Date: 2026-05-19 11:42:00
+Payee: Priya Stores
+Amount: ₹7,575.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0723
+Date: 2026-05-21 19:10:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0006
+Date: 2026-05-24 11:23:00
+Payee: Ravi Kumar
+Amount: ₹11,647.00
+Channel: IMPS
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0377
+Date: 2026-05-24 13:37:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0449
+Date: 2026-05-24 14:25:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0843
+Date: 2026-05-24 16:37:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0803
+Date: 2026-05-25 19:00:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0197
+Date: 2026-05-26 18:24:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0229
+Date: 2026-05-26 18:35:00
+Payee: SuperMart
+Amount: ₹706.00
+Channel: UPI
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 3 transactions totaling ₹52,378.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0143
+Date: 2026-05-28 11:19:00
+Payee: Ravi Kumar
+Amount: ₹7,291.00
+Channel: NEFT
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 3 transactions totaling ₹9,720.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0720
+Date: 2026-05-30 17:53:00
+Payee: Ravi Kumar
+Amount: ₹7,841.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0349
+Date: 2026-05-31 11:41:00
+Payee: Book Shop
+Amount: ₹7,624.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0169
+Date: 2026-06-01 17:37:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0965
+Date: 2026-06-01 17:41:00
+Payee: SuperMart
+Amount: ₹2,081.00
+Channel: UPI
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 3 transactions totaling ₹50,165.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0579
+Date: 2026-06-02 19:09:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0533
+Date: 2026-06-06 12:52:00
+Payee: Ravi Kumar
+Amount: ₹9,047.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0993
+Date: 2026-06-07 12:11:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0432
+Date: 2026-06-07 18:08:00
+Payee: Electricity Board
+Amount: ₹3,649.00
+Channel: UPI
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 3 transactions totaling ₹5,528.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0759
+Date: 2026-06-07 18:09:00
+Payee: Uber
+Amount: ₹1,486.00
+Channel: UPI
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 4 transactions totaling ₹7,014.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0127
+Date: 2026-06-09 13:21:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0237
+Date: 2026-06-10 18:03:00
+Payee: ABC Ltd
+Amount: ₹45,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹45,000.00 is approximately 18.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN1001
+Date: 2026-06-15 02:10:00
+Payee: Unknown Payee
+Amount: ₹75,000.00
+Channel: IMPS
+Risk Score: 65
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹75,000.00 is approximately 30.2x the customer's median transaction amount.
+  - ODD_HOURS_ACTIVITY: Transaction occurred at 02:10, outside the customer's typical activity period.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN1002
+Date: 2026-06-15 02:16:00
+Payee: Unknown Payee
+Amount: ₹70,000.00
+Channel: IMPS
+Risk Score: 65
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹70,000.00 is approximately 28.2x the customer's median transaction amount.
+  - ODD_HOURS_ACTIVITY: Transaction occurred at 02:16, outside the customer's typical activity period.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN1003
+Date: 2026-06-15 02:23:00
+Payee: Unknown Payee
+Amount: ₹68,000.00
+Channel: IMPS
+Risk Score: 90
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹68,000.00 is approximately 27.4x the customer's median transaction amount.
+  - ODD_HOURS_ACTIVITY: Transaction occurred at 02:23, outside the customer's typical activity period.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+  - TRANSACTION_BURST: 3 transactions totaling ₹213,000.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0908
+Date: 2026-06-15 08:55:00
+Payee: Priya Stores
+Amount: ₹7,855.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0884
+Date: 2026-06-16 13:09:00
+Payee: Amazon
+Amount: ₹7,663.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0621
+Date: 2026-06-17 12:22:00
+Payee: Ravi Kumar
+Amount: ₹8,849.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN1004
+Date: 2026-06-20 01:55:00
+Payee: New Beneficiary
+Amount: ₹95,000.00
+Channel: NEFT
+Risk Score: 65
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹95,000.00 is approximately 38.3x the customer's median transaction amount.
+  - ODD_HOURS_ACTIVITY: Transaction occurred at 01:55, outside the customer's typical activity period.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0809
+Date: 2026-06-23 18:02:00
+Payee: Ravi Kumar
+Amount: ₹9,199.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0325
+Date: 2026-06-23 20:21:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0003
+Date: 2026-06-23 20:38:00
+Payee: Pharmacy
+Amount: ₹4,767.00
+Channel: UPI
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 3 transactions totaling ₹58,905.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0131
+Date: 2026-06-23 20:46:00
+Payee: Pharmacy
+Amount: ₹1,725.00
+Channel: UPI
+Risk Score: 25
+Triggered Rules:
+  - TRANSACTION_BURST: 4 transactions totaling ₹60,630.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0315
+Date: 2026-06-23 20:53:00
+Payee: Ravi Kumar
+Amount: ₹11,800.00
+Channel: IMPS
+Risk Score: 45
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+  - TRANSACTION_BURST: 3 transactions totaling ₹18,292.00 occurred within approximately 30 minutes.
+
+Transaction ID: TXN0536
+Date: 2026-06-24 13:27:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0983
+Date: 2026-06-25 18:45:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0125
+Date: 2026-06-25 20:16:00
+Payee: Ravi Kumar
+Amount: ₹11,987.00
+Channel: UPI
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN1005
+Date: 2026-06-25 23:48:00
+Payee: New Beneficiary
+Amount: ₹60,000.00
+Channel: IMPS
+Risk Score: 65
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹60,000.00 is approximately 24.2x the customer's median transaction amount.
+  - ODD_HOURS_ACTIVITY: Transaction occurred at 23:48, outside the customer's typical activity period.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0653
+Date: 2026-06-26 10:00:00
+Payee: ABC Ltd
+Amount: ₹48,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹48,000.00 is approximately 19.3x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0794
+Date: 2026-06-27 09:10:00
+Payee: Book Shop
+Amount: ₹7,445.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0161
+Date: 2026-06-28 08:20:00
+Payee: Book Shop
+Amount: ₹7,714.00
+Channel: NEFT
+Risk Score: 20
+Triggered Rules:
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0218
+Date: 2026-06-28 10:09:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0501
+Date: 2026-06-28 16:10:00
+Payee: ABC Ltd
+Amount: ₹45,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹45,000.00 is approximately 18.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0333
+Date: 2026-06-29 13:09:00
+Payee: ABC Ltd
+Amount: ₹50,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹50,000.00 is approximately 20.1x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+Transaction ID: TXN0020
+Date: 2026-06-29 19:39:00
+Payee: ABC Ltd
+Amount: ₹42,000.00
+Channel: Bank Transfer
+Risk Score: 50
+Triggered Rules:
+  - UNUSUALLY_LARGE_TRANSFER: Transaction amount ₹42,000.00 is approximately 16.9x the customer's median transaction amount.
+  - BEHAVIOUR_PATTERN_DEVIATION: Transaction amount is significantly different from the customer's established transaction pattern.
+
+INVESTIGATION PRIORITY
+------------------------------
+1. Verify whether the customer authorized the highlighted transactions.
+2. Review the relationship with the highlighted payee.
+3. Review account activity immediately before and after the flagged transactions.
+4. Check whether the transaction pattern has a legitimate explanation.
+
+IMPORTANT: Risk indicators do not establish fraud. Final judgement must be made by a qualified investigator.
