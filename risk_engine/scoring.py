@@ -52,4 +52,39 @@ def analyze_transaction(transaction_data,profile):
                 "risk_score": total_score,
                 "rules": transaction_findings
             })
+    return findings
+
+#create a calculation function to calculate the overall risk score for the customer based on the individual transaction risk scores.    
+
+def calculate_overall_risk(findings):
+
+    if not findings:
+        return {
+            "status": "NO ATTENTION REQUIRED",
+            "risk_level": "LOW",
+            "score": 0
+        }
+
+    maximum_score = max(
+        finding["risk_score"]
+        for finding in findings
+    )
+
+    if maximum_score >= 80:
+        level = "CRITICAL"
+
+    elif maximum_score >= 60:
+        level = "HIGH"
+
+    elif maximum_score >= 30:
+        level = "MEDIUM"
+
+    else:
+        level = "LOW"
+
+    return {
+        "status": "ATTENTION REQUIRED",
+        "risk_level": level,
+        "score": maximum_score
+    }
 
