@@ -118,7 +118,7 @@ def check_new_payee(row,profile):
             "score":20,
             "reason":
                 f"Transaction payee '{row['payee']}' is not in the customer's known payees."
-                f"is approximately {ratio:.1f}x the customer's "
+                
                 f"median transaction amount."
         }
 
