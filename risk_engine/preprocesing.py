@@ -112,4 +112,41 @@ def check_new_payee(row,profile):
     return None
 
 
-def
+def check_odd_hours(row, profile):
+
+    hour = row["hour"]
+
+    if hour < profile["normal_start_hour"] or \
+       hour >= profile["normal_end_hour"]:
+
+        return {
+            "rule": "ODD_HOURS_ACTIVITY",
+            "score": 15,
+            "reason": (
+                f"Transaction occurred at {row['date'].strftime('%H:%M')}, "
+                f"outside the customer's typical activity period."
+            )
+        }
+
+    return None
+
+def check_pattern_deviation(row, profile):
+
+    median_amount = profile["median_amount"]
+
+    if median_amount <= 0:
+        return None
+
+    if row["amount"] >= median_amount * 3:
+
+        return {
+            "rule": "BEHAVIOUR_PATTERN_DEVIATION",
+            "score": 20,
+            "reason": (
+                "Transaction amount is significantly different "
+                "from the customer's established transaction pattern."
+            )
+        }
+
+    return None
+
