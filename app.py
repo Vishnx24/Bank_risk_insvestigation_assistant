@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+from llm.llm_report import generate_llm_report
 from risk_engine.preprocessing import load_transactions
 from risk_engine.preprocessing import create_customer_profile
 from risk_engine.scoring import (
