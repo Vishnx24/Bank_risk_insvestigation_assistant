@@ -71,3 +71,45 @@ def create_customer_profile(transaction_data):
     profile["normal_end_hour"] = 22
 
     return profile
+
+def check_large_transaction(row, profile):
+
+    median_amount = profile["median_amount"]
+
+    # Avoid division problems
+    if median_amount <= 0:
+        return None
+
+    if row["amount"] >= median_amount * 5:
+
+        ratio = row["amount"] / median_amount
+
+        return {
+            "rule": "UNUSUALLY_LARGE_TRANSFER",
+            "score": 30,
+            "reason": (
+                f"Transaction amount ₹{row['amount']:,.2f} "
+                f"is approximately {ratio:.1f}x the customer's "
+                f"median transaction amount."
+            )
+        }
+
+    return None
+
+def check_new_payee(row,profile):
+
+    if row["payee"] not in profile["known_payees"]:
+
+        return{
+            "rule":"NEW_PAYEE_DETECTED",
+            "score":20,
+            "reason":
+                f"Transaction payee '{row['payee']}' is not in the customer's known payees."
+                f"is approximately {ratio:.1f}x the customer's "
+                f"median transaction amount."
+        }
+
+    return None
+
+
+def
